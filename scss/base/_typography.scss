@@ -1,0 +1,10 @@
+.logo {
+    h1 {
+        @include shrikhand-apparence(black, map-get($font-size-shrikhand, logo-header));
+        margin: 0;
+    }
+    h6 {
+        @include shrikhand-apparence(white, map-get($font-size-shrikhand, logo-footer));
+    }
+}
+ 

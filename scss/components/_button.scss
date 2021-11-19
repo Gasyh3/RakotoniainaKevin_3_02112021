@@ -1,0 +1,16 @@
+.btn {
+    border: 0;
+    padding: 15px 25px;
+    font-weight: 500;
+    @include roboto-apparence(white, map-get($font-size-roboto,text-button));
+    background-color: $color-background-button;
+    background-image: linear-gradient(0deg,$color-primary,$color-secondary);
+    border-radius: 100px;
+    // cursor :
+    cursor: pointer;
+    //transition-duration :
+    transition-duration: 250ms;
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+    text-decoration: none;
+
+}

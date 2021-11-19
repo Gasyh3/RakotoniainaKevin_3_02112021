@@ -1,0 +1,36 @@
+.footer {
+    background-color: $color-background-footer;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    &__logo {
+        &--position {
+            margin-top: 5px;
+        }
+    }
+    &__h6 {
+        &--margin {
+            margin: 0;
+        }
+    }
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    &__listelement {
+        margin: 10px 0;
+    }
+    &__link {
+        @include roboto-apparence (white, map-get($font-size-roboto, text));
+        color: white;
+        text-decoration: none;
+    }
+    &__icon {
+        width: 20px;
+        margin-right: 8px;
+    }
+}
