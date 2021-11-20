@@ -1,0 +1,55 @@
+.fonctionnement {
+    padding: 32px 16px;
+
+    .container {
+        position: relative;
+        margin: auto;
+    }
+
+    &__title {
+        @include roboto-apparence(black, map-get($font-size-roboto,title));
+        margin-top: 0;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        //mise en place d'un compteur :
+        counter-reset: compteur;
+    }
+
+    &__step {
+        @include flex-row (start, center);
+        padding: 24px;
+        margin: 16px 0 16px 12px;
+        background-color: $color-background-menu;
+        border-radius: 20px;
+        position: relative;
+
+        &:before {
+            @include flex-row-center;
+            @include roboto-apparence(white, map-get($font-size-roboto, text));
+            //incrementation du compteur :
+            counter-increment: compteur 1;
+            content: counter(compteur) " ";
+            //Utiliser une mixin pour rendre la couleur plus clair
+            background-color: $color-primary;
+            height: 24px;
+            width: 24px;
+            border-radius: 100px;
+            position: absolute;
+            left: -12px;
+        }
+    }
+
+    &__icon {
+        margin-right: 16px;
+        color: #7E7E7E;
+    }
+
+    &__text {
+        @include roboto-apparence(black, map-get($font-size-roboto,text));
+        margin-right: 16px;
+    }
+}
