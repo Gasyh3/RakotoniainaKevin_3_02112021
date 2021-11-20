@@ -1,0 +1,25 @@
+.restaurant {
+    background-color: $color-background-menu;
+    padding: 32px 16px;
+
+    .container {
+        margin: auto;
+        position: relative;
+    }
+
+    &__title {
+        @include roboto-apparence(black, map-get($font-size-roboto,title));
+        margin-top: 0;   
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 32px;
+        row-gap: 32px;
+
+        @media (min-width:64rem) {
+            grid-template-columns: repeat(2, 1fr);
+          }
+    }
+}

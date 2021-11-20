@@ -5,6 +5,7 @@
     text-decoration: none;
     color: inherit;
     display: block;
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 13%);
 
     &__img {
         height: 12 rem;
@@ -13,5 +14,37 @@
         border-radius: 1rem 1rem 0 0;
         box-shadow: none;
         object-fit: cover;
+        max-height: 190px;
+    }
+
+    &__new {
+        background-color: $color-tertiary;
+        @include roboto-apparence($color-tertiary-2, map-get($font-size-roboto, text));
+        padding: 8px;
+        border-radius: 2px;
+        position: absolute;
+        top: 8px;
+        right: 12px;
+    }
+
+    &__info {
+        @include flex-row (none, center);
+        padding: 16px;
+        position: relative;
+    }
+
+    &__content {
+        //flex: 
+        flex: 1;
+    }
+
+    &__title {
+        @include roboto-apparence(black, map-get($font-size-roboto, card-title));
+        margin: 0px 0px 4px;
+    }
+
+    &__text {
+        @include roboto-apparence(black, map-get($font-size-roboto, text));
+        font-weight: 300;
     }
 }

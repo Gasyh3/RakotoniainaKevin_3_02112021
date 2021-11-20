@@ -17,6 +17,10 @@
         list-style: none;
         //mise en place d'un compteur :
         counter-reset: compteur;
+        
+        @media (min-width:64rem) {
+            @include flex-row (space-around, center);
+          }
     }
 
     &__step {
@@ -43,6 +47,7 @@
             position: absolute;
             left: -12px;
         }
+        
     }
 
     &__icon {

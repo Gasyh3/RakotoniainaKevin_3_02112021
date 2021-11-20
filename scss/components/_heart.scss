@@ -1,0 +1,57 @@
+.heart {
+    height: 32px;
+    width: 32px;
+    border: 0 solid transparent;
+    padding: 0;
+    @include flex-row(center, center);
+    cursor: pointer;
+    position: relative;
+    background-color: black;
+
+    //:hover : quand on passe dessus
+    //::before : crée un pseudo-élément qui sera le premier enfant de l'élément ciblé
+    &:hover::before {
+        //L'élément esera complètement opaque
+        opacity: 1;
+    }
+
+    &::before {
+        opacity: 0;
+        transition: 0.5s;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background:linear-gradient(0deg, $color-primary 0%,$color-secondary 100%);
+      }
+    
+    &__like {
+        //The !important rule in CSS is used to add more importance to a property/value than normal.
+        background-color: white !important;
+        @include flex-row(center, center);
+    
+        &--position {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        &--animation {
+            transition-duration: .25s;
+            background-color: $color-background-menu;
+            mix-blend-mode: lighten;
+        }
+    }
+}
+
+.heart:hover {
+    &__like {
+        &--noColor {
+            opacity: 0;
+        }
+    }
+}
