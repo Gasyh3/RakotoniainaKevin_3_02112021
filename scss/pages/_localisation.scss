@@ -6,7 +6,7 @@
 
     &__icon {
         margin-right: 15px;
-        @include icon-size(map-get($size-icon, localisation));
+        @include icon-apparence(black ,map-get($size-icon, localisation));
         justify-content: center;
     }
     

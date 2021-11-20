@@ -26,9 +26,11 @@
         background-color: $color-background-menu;
         border-radius: 20px;
         position: relative;
+        // explication
+        box-shadow: 4px 4px 4px rgb(0 0 0 / 13%);
 
         &:before {
-            @include flex-row-center;
+            @include flex-row (center, center);
             @include roboto-apparence(white, map-get($font-size-roboto, text));
             //incrementation du compteur :
             counter-increment: compteur 1;

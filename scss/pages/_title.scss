@@ -1,5 +1,5 @@
 .mainTitle {
-    @include flex-column-center;
+    @include flex-column (center, center);
     @include centre-element;
     padding: 32px 32px 64px 32px;
     background-color: $color-background-title;
