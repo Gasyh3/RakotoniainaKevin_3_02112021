@@ -1,0 +1,17 @@
+.card {
+    background-color: #fff;
+    border-radius: 16px;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+
+    &__img {
+        height: 12 rem;
+        width: 100%;
+        border: 0 solid transparent;
+        border-radius: 1rem 1rem 0 0;
+        box-shadow: none;
+        object-fit: cover;
+    }
+}
