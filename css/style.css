@@ -501,7 +501,7 @@ template {
   column-gap: 32px;
   row-gap: 32px;
 }
-@media (min-width: 64rem) {
+@media only sreen and (min-width: 992px) {
   .restaurant__cards {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -526,7 +526,7 @@ template {
   list-style: none;
   counter-reset: compteur;
 }
-@media (min-width: 64rem) {
+@media only sreen and (min-width: 992px) {
   .fonctionnement__list {
     display: flex;
     flex-direction: row;

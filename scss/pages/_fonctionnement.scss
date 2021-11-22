@@ -18,7 +18,8 @@
         //mise en place d'un compteur :
         counter-reset: compteur;
         
-        @media (min-width: 1024px) {
+        @media only sreen and (min-width: 992px) {
+            // Version desktop
             @include flex-row (space-around, center);
           }
     }
