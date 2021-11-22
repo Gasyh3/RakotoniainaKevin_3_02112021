@@ -397,10 +397,15 @@ template {
   height: 12 rem;
   width: 100%;
   border: 0 solid transparent;
-  border-radius: 1rem 1rem 0 0;
+  border-radius: 16px 16px 0 0;
   box-shadow: none;
   object-fit: cover;
-  max-height: 190px;
+  height: 150px;
+}
+@media (min-width: 992px) {
+  .card__img {
+    height: 200px;
+  }
 }
 .card__new {
   background-color: #99E2D0;
@@ -411,6 +416,7 @@ template {
   border-radius: 2px;
   position: absolute;
   top: 8px;
+  margin-top: 2px;
   right: 12px;
 }
 .card__info {
@@ -501,7 +507,7 @@ template {
   column-gap: 32px;
   row-gap: 32px;
 }
-@media only sreen and (min-width: 992px) {
+@media (min-width: 992px) {
   .restaurant__cards {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -526,7 +532,7 @@ template {
   list-style: none;
   counter-reset: compteur;
 }
-@media only sreen and (min-width: 992px) {
+@media (min-width: 992px) {
   .fonctionnement__list {
     display: flex;
     flex-direction: row;

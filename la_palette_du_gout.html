@@ -3,18 +3,19 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, height=device-height">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">	
-        <link rel="stylesheet" href="../css/style.css"
-        <link rel="stylesheet" href="../css/normalize.css"
+        <link rel="stylesheet" href="./css/style.css">
         <title>La palette du goût - Ohmyfood</title>
     </head>
     <body>
-        <header>
-            <img id ="logo" src="../img/logo/ohmyfood.png" alt="ohmyfood">
+        <header class="header">
             <i class="fas fa-arrow-left"></i>
+            <div class="logo header__logo--alignement">
+                <h1>Ohmyfood </h1> 
+            </div>
         </header>
         <main>
             <section>
-                <img id ="lpdg" src="../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+                <img id ="lpdg" src="./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
             </section>
             <section>
                 <div>
@@ -137,27 +138,33 @@
                         </div>
                     </section>
                 </div>
-                <div>
-                    <button type="button" id="search-button">
-                        <span>Commander</span>
-                    </button>
-                </div>
+                <a href="#" class="btn" >Commander</a> 
             </section>
         </main>
-        <footer id="footer">
-            <img id ="logo" src="../img/logo/ohmyfood.png" alt="ohmyfood">
-            <nav>
-                <div>
-                    <i class="fas fa-utensils"></i>
-                    <a href="#">Proposer un restaurant</a>
+        <footer class="footer">
+            <div class="container">
+                <div class="logo footer__logo--position">
+                    <h6 class="footer__h6--margin">ohmyfood </h6> 
                 </div>
-                <div>
-                    <i class="fas fa-hands-helping"></i>
-                    <a href="#">Devenir partenaire</a>
-                </div>
-                <a href="#">Mentions légales</a>
-                <a href="#">Contact</a>
-            </nav>
+                <ul class="footer__list">
+                    <li class="footer__listelement">
+                        <a class="footer__link" href="#">
+                            <i class="fas fa-utensils footer__icon"></i>
+                            Proposer un restaurant</a>
+                    </li>
+                    <li class="footer__listelement">
+                        <a class="footer__link" href="#">
+                            <i class="fas fa-hands-helping footer__icon"></i>
+                            Devenir partenaire</a>
+                    </li>
+                    <li class="footer__listelement">
+                        <a class="footer__link" href="#">Mentions légales</a>
+                    </li>
+                    <li class="footer__listelement">
+                        <a class="footer__link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </footer>
     </body>
 </html>
