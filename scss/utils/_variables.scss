@@ -14,30 +14,21 @@ $color-background-menu: #F6F6F6;
 $color-background-title: #FAFAFA;
 $color-background-button: #686868;
 
+/* === font size=== */
+$localisation: 20px;
+$title: 25px;
+$text: 16px;
+$card-title: 20px;
+$submenu-title: 18px;
+$text-button: 18px;
 
+$logo-header: 40px;
+$logo-footer: 20px;
+$resto-title: 20px;
 
-/* ==== Maps pour choisir la taille du logo ==== */
-$font-size-shrikhand: (
-    logo-header: 40px,
-    logo-footer: 20px,
-    resto-title: 20px,
-);
-
-/* ==== Maps pour choisir la taille de la police ==== */
-$font-size-roboto: (
-    localisation: 20px,
-    title: 25px,
-    text: 16px,
-    card-title: 20px,
-    submenu-title: 18px,
-    text-button: 18px,
-);
-
-/* ==== Maps pour la taille des logo ==== */
-$size-icon: (
-    localisation: 20px,
-    fonctionnement: 15px,
-    heart: 30px,
-    arrow: 30px,
-);
+/* === La taille des icones === */
+$size-icon-map: 20px;
+$size-icon-fonctionnement: 15px;
+$size-icon-heart: 30px;
+$size-icon-arrow: 30px;
 

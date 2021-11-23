@@ -1,15 +1,6 @@
-/* == Permet de changer Shrikhand :
-    la couleur et la taille du texte  == */
-@mixin shrikhand-apparence ($color, $font-size){
-    font-family: 'Shrikhand', cursive;
-    font-size: $font-size;
-    color: $color;
-}
-
-/* == Permet de changer Roboto :
-    la couleur et la taille du texte  == */
-@mixin roboto-apparence ($color, $font-size) {
-    font-family: 'Roboto', sans-serif;
+/* == Permet de modifier la poolice == */
+@mixin police-apparence ($police, $color, $font-size) {
+    font-family: $police;
     font-size: $font-size;
     color: $color;
 }
@@ -21,25 +12,11 @@
     color: $color;
 }
 
-/* == Permet de centre un bloc == */
-@mixin centre-element {
-    text-align: center;
-}
-
 /* == Permet de mettre en colonne (flexbox)
     met en place la position des éléments == */
-@mixin flex-column ($justify-content, $align-items) {
+@mixin flex-use ($direction, $justify-content, $align-items) {
     display: flex;
-    flex-direction: column;
-    justify-content: $justify-content;
-    align-items: $align-items;
-}
-
-/* == Permet de mettre en ligne (flexbox)
-    met en place la position des éléments == */
-@mixin flex-row ($justify-content, $align-items) {
-    display: flex;
-    flex-direction: row;
+    flex-direction: $direction;
     justify-content: $justify-content;
     align-items: $align-items;
 }

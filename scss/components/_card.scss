@@ -24,7 +24,7 @@
 
     &__new {
         background-color: $color-tertiary;
-        @include roboto-apparence($color-tertiary-2, map-get($font-size-roboto, text));
+        @include police-apparence('Roboto', $color-tertiary-2, $text);
         padding: 8px;
         border-radius: 2px;
         position: absolute;
@@ -34,7 +34,7 @@
     }
 
     &__info {
-        @include flex-row (none, center);
+        @include flex-use (row, none, center);
         padding: 16px;
         position: relative;
     }
@@ -45,12 +45,12 @@
     }
 
     &__title {
-        @include roboto-apparence(black, map-get($font-size-roboto, card-title));
+        @include police-apparence('Roboto', black, $card-title);
         margin: 0px 0px 4px;
     }
 
     &__text {
-        @include roboto-apparence(black, map-get($font-size-roboto, text));
+        @include police-apparence('Roboto', black, $text);
         font-weight: 300;
     }
 }

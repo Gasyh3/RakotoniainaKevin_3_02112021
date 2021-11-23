@@ -7,7 +7,7 @@
     }
 
     &__title {
-        @include roboto-apparence(black, map-get($font-size-roboto,title));
+        @include police-apparence('Roboto', black, $title);
         margin-top: 0;
     }
 
@@ -20,12 +20,12 @@
         
         @media (min-width: 992px) {
             // Version desktop
-            @include flex-row (space-around, center);
+            @include flex-use (row, space-around, center);
           }
     }
 
     &__step {
-        @include flex-row (start, center);
+        @include flex-use (row, start, center);
         padding: 24px;
         margin: 16px 0 16px 12px;
         background-color: $color-background-menu;
@@ -35,8 +35,8 @@
         box-shadow: 4px 4px 4px rgb(0 0 0 / 13%);
 
         &:before {
-            @include flex-row (center, center);
-            @include roboto-apparence(white, map-get($font-size-roboto, text));
+            @include flex-use (row, center, center);
+            @include police-apparence('Roboto', white, $text);
             //incrementation du compteur :
             counter-increment: compteur 1;
             content: counter(compteur) " ";
@@ -48,7 +48,6 @@
             position: absolute;
             left: -12px;
         }
-        
     }
 
     &__icon {
@@ -57,7 +56,7 @@
     }
 
     &__text {
-        @include roboto-apparence(black, map-get($font-size-roboto,text));
+        @include police-apparence('Roboto', black, $text);
         margin-right: 16px;
     }
 }

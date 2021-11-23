@@ -6,29 +6,29 @@
         flex-direction: column;
         padding: 20px;
     }
+
     &__logo {
-        &--position {
-            margin-top: 5px;
-        }
+        @include police-apparence('Shrikhand', white, $logo-footer);
+        margin: 0;
+        margin-bottom: 16px;
     }
-    &__h6 {
-        &--margin {
-            margin: 0;
-        }
-    }
+
     &__list {
         list-style: none;
         padding: 0;
         margin: 0;
     }
+
     &__listelement {
         margin: 10px 0;
     }
+
     &__link {
-        @include roboto-apparence (white, map-get($font-size-roboto, text));
+        @include police-apparence('Roboto', white, $text);
         color: white;
         text-decoration: none;
     }
+    
     &__icon {
         width: 20px;
         margin-right: 8px;
