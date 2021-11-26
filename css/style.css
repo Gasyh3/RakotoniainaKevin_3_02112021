@@ -547,6 +547,24 @@ template {
   color: black;
 }
 
+.submenus {
+  display: grid;
+}
+.submenus .submenu {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 16px;
+}
+.submenus .submenu__title {
+  font-family: "Roboto";
+  font-size: 18px;
+  color: black;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 8px;
+  font-weight: 400;
+}
+
 .fonctionnement {
   padding: 32px 16px;
 }

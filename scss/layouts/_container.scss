@@ -53,3 +53,22 @@
         @include police-apparence('Shrikhand', black, $title);
     }
 }
+
+.submenus {
+    display: grid;
+
+    .submenu {
+        max-width: 100%;
+        overflow: hidden;
+        padding: 0 16px;
+
+        &__title {
+            @include police-apparence('Roboto', black, $submenu-title);
+            text-transform: uppercase;
+            position: relative;
+            padding-bottom: 8px;
+            font-weight: 400;
+        }
+    }
+
+}
