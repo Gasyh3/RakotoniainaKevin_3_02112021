@@ -3,7 +3,7 @@
     width: 32px;
     border: 0 solid transparent;
     padding: 0;
-    @include flex-row(center, center);
+    @include flex-use(row, center, center);
     cursor: pointer;
     position: relative;
     background-color: black;
@@ -30,7 +30,7 @@
     &__like {
         //The !important rule in CSS is used to add more importance to a property/value than normal.
         background-color: white !important;
-        @include flex-row(center, center);
+        @include flex-use(row, center, center);
     
         &--position {
             position: absolute;

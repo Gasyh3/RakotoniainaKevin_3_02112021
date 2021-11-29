@@ -1,7 +1,27 @@
 .item {
-   
+    background-color: #fff;
+    padding: 16px;
+    display: flex;
+    border-radius: 12px;
+    margin: 16px 0;
+    box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
+    max-width: 100%;
 
-    &__info {
+    &__title {
+        @include police-apparence('Roboto', black, $text);
+        margin: 0;
+    }
+
+    &__description {
+        @include police-apparence('Roboto', black, $text);
+        margin: 0;
         
+    }
+
+    &__price {
+        @include police-apparence('Roboto', black, $price);
+        font-weight: 700;
+        @include flex-use (row, flex-end, flex-end);
+        padding-left: 8px;
     }
 }
