@@ -1,7 +1,3 @@
-/* ===== Importation des polices ===== */
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
-
 /* ===== Imporation des fichiers ===== */
 @import './utils/variables';
 @import './utils/mixins';
@@ -13,9 +9,6 @@
 @import './components/card';
 @import './layouts/header';
 @import './layouts/footer';
-@import './layouts/container';
-@import './pages/fonctionnement';
-@import './pages/localisation';
-@import './pages/title';
-
+@import './layouts/menu';
+@import './pages/homepage';
 

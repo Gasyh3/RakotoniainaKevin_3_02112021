@@ -1,3 +1,40 @@
+/* == Parti localisation de la page d'acceuil == */
+.localisation {
+    display: flex;
+    justify-content: center;
+    background-color: $color-background-localisation;
+    padding: 20px 16px;
+
+    &__icon {
+        margin-right: 15px;
+        @include icon-apparence(black, $size-icon-map);
+        justify-content: center;
+    }
+    
+    &__text {
+        @include police-apparence('Roboto', black, $localisation);
+        font-weight: bold;
+    }
+}
+
+/* == Parti titre de la page d'acceuil == */
+.mainTitle {
+    @include flex-use (column, center, center);
+    text-align: center;
+    padding: 32px 32px 64px 32px;
+    background-color: $color-background-title;
+
+    &__title {
+        @include police-apparence('Roboto', black, $title);
+    }
+
+    &__text {
+        @include police-apparence('Roboto', black, $text);
+        font-weight: 300;
+    }
+}
+
+/* == Parti fonctionnement de la page d'acceuil == */
 .fonctionnement {
     padding: 32px 16px;
 
@@ -58,5 +95,33 @@
     &__text {
         @include police-apparence('Roboto', black, $text);
         margin-right: 16px;
+    }
+}
+
+/* == Parti restaurant de la page d'acceuil == */
+.restaurant {
+    background-color: $color-background-menu;
+    padding: 32px 16px;
+
+    .container {
+        margin: auto;
+        position: relative;
+    }
+
+    &__title {
+        @include police-apparence('Roboto', black, $title);
+        margin-top: 0;   
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 32px;
+        row-gap: 32px;
+
+        @media (min-width: 992px) {
+            // Version desktop
+            grid-template-columns: repeat(2, 1fr);
+          }
     }
 }
