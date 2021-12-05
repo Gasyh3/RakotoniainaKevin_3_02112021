@@ -7,21 +7,81 @@
     box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
     max-width: 100%;
 
+    &--animation {
+        overflow: hidden;
+        cursor: pointer;
+        animation: itemAppear 1.7s;
+        animation-timing-function: cubic-bezier(.19,.56,.61,.87);
+        animation-fill-mode: forwards;
+        transform: scale(1);
+    }
+
+    &__info {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        flex: 1;
+    }
+
     &__title {
         @include police-apparence('Roboto', black, $text);
         margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 
     &__description {
         @include police-apparence('Roboto', black, $text);
         margin: 0;
-        
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;    
     }
 
     &__price {
         @include police-apparence('Roboto', black, $price);
         font-weight: 700;
         @include flex-use (row, flex-end, flex-end);
-        padding-left: 8px;
+        padding-right: 30px;
+    }
+
+    &__confirmation {
+        background-color: $color-tertiary;
+        margin: -16px -80px -16px -16px;
+        width: 64px;
+        @include flex-use (row, center, center);
+        transition-duration: 0.5s;
+    }
+
+    &:hover &__confirmation {
+        margin-right: -16px;
+    }
+
+    &__wrapicon {
+        height: 25px;
+        width: 25px;
+        background-color: white;
+        @include flex-use (row, center, center);
+        border-radius: 100px;
+        transform: rotate(-360deg);
+        transition-duration: 0.5s;
+    
+    }
+
+    &:hover &__wrapIcon {
+        transform: rotate(0);
+    }
+    
+    &__icon {
+        color: $color-tertiary;
+    }
+
+}
+
+// fonction qui permet d'organiser l'arrivée des items
+@for $i from 0 to 9 {
+    .delay-#{$i} {
+      animation-delay:  #{math.div($i, 10)}s;
     }
 }

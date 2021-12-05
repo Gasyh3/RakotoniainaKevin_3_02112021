@@ -1,7 +1,11 @@
+/* == Importation de la bibliothèque math == */
+@use "sass:math";
+
 /* ===== Imporation des fichiers ===== */
 @import './utils/variables';
 @import './utils/mixins';
 @import './utils/functions';
+@import './utils/keyframes';
 @import './base/base';
 @import './components/button';
 @import './components/heart';
