@@ -11,8 +11,8 @@
         overflow: hidden;
         cursor: pointer;
         animation: itemAppear 1.7s;
-        animation-timing-function: cubic-bezier(.19,.56,.61,.87);
-        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(.65,.02,.45,1);
+        animation-fill-mode: both;
         transform: scale(1);
     }
 
