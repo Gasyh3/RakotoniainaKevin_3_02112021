@@ -101,7 +101,7 @@
   overflow: hidden;
   cursor: pointer;
   animation: itemAppear 1.7s;
-  animation-timing-function: cubic-bezier(0.65, 0.02, 0.45, 1);
+  animation-timing-function: cubic-bezier(1, 0.99, 1, 0.87);
   animation-fill-mode: both;
   transform-origin: top center;
   transform: scale(1);
