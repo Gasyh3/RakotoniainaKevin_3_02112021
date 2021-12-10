@@ -11,7 +11,7 @@
     //:hover : quand on passe dessus
     //::before : crée un pseudo-élément qui sera le premier enfant de l'élément ciblé
     &:hover::before {
-        //L'élément esera complètement opaque
+        //L'élément sera opaque
         opacity: 1;
     }
 
@@ -29,8 +29,7 @@
     
     &__like {
         //The !important rule in CSS is used to add more importance to a property/value than normal.
-        background-color: white !important;
-        @include flex-use(row, center, center);
+        @include flex-use(row,center, center);
     
         &--position {
             position: absolute;
@@ -46,12 +45,13 @@
             mix-blend-mode: lighten;
         }
     }
-}
-
-.heart:hover {
-    &__like {
-        &--noColor {
-            opacity: 0;
+    &:hover {
+        &__like {
+            &--noColor {
+                opacity: 0;
+            }
         }
     }
 }
+
+

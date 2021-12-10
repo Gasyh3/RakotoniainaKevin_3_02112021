@@ -53,4 +53,8 @@
         @include police-apparence('Roboto', black, $text);
         font-weight: 300;
     }
+
+    &__like {
+        background-color: white!important;
+    }
 }

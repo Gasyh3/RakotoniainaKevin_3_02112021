@@ -13,6 +13,7 @@
         animation: itemAppear 1.7s;
         animation-timing-function: cubic-bezier(.65,.02,.45,1);
         animation-fill-mode: both;
+        transform-origin: top center;
         transform: scale(1);
     }
 
