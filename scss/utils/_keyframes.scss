@@ -1,9 +1,13 @@
 @keyframes itemAppear {
     from {
         //transform: scale(0);
+        transition: all 0.4s;
+        margin-top: 3rem;
         opacity: 0;
     } to {
         //transform: scale(1);
+        transition: all 0.4s;
+        margin-top: 0rem;
         opacity: 1;
     }
 }
