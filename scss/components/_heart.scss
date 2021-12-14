@@ -1,30 +1,26 @@
 .heart {
     height: 32px;
     width: 32px;
-    border: 0 solid transparent;
     padding: 0;
     @include flex-use(row, center, center);
     cursor: pointer;
     position: relative;
-    background-color: black;
+    background-color: transparent;    
 
-    &__empty {
-        &:hover {
-            color: transparent;
-            opacity: 0;
-        }
-    }
+    &:hover .fas {
+        transition: transform 200ms;
+        transform: scale(1);
+      }
 
-    &__full {
-        color: transparent;
-        transition-duration: .25s;
-    }
-    
-    &--animation {
-        background-color: $color-background-menu;
-        mix-blend-mode: lighten;
-        opacity: 1;
-    }
+      .far {
+        position: absolute;
+     }
+
+      .fas {
+        color: $color-secondary;
+        position: absolute;
+        transform: scale(0);
+      }
 }
 
 
