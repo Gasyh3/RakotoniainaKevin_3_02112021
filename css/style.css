@@ -220,7 +220,7 @@
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.13);
 }
 .card__img {
-  height: 12 rem;
+  height: 12rem;
   width: 100%;
   border: 0 solid transparent;
   border-radius: 16px 16px 0 0;
@@ -248,7 +248,7 @@
 .card__info {
   display: flex;
   flex-direction: row;
-  justify-content: none;
+  justify-content: start;
   align-items: center;
   padding: 16px;
   position: relative;
