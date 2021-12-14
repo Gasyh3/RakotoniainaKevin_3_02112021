@@ -75,20 +75,16 @@
   position: relative;
   background-color: transparent;
 }
-.heart:hover .fas {
-  transition: transform 200ms;
-  transform: scale(1);
+.heart path {
+  stroke-width: 40;
+  fill: transparent;
+  stroke: black;
 }
-.heart .far {
-  position: absolute;
-}
-.heart .fas {
-  color: #FF79DA;
-  position: absolute;
-  transform: scale(0);
+.heart:hover path {
+  fill: url(#text-fill);
+  stroke: transparent;
 }
 
-/* ==== Test code ==== */
 .item {
   background-color: #fff;
   padding: 16px;
@@ -165,7 +161,7 @@
   align-items: center;
   border-radius: 100px;
   transform: rotate(-360deg);
-  transition-duration: 0.5s;
+  transition-duration: 0.7s;
 }
 .item:hover .item__wrapIcon {
   transform: rotate(0);

@@ -7,23 +7,14 @@
     position: relative;
     background-color: transparent;    
 
-    &:hover .fas {
-        transition: transform 200ms;
-        transform: scale(1);
-      }
+    path {
+      stroke-width: 40;
+      fill: transparent;
+      stroke: black;
+    }
 
-      .far {
-        position: absolute;
-     }
-
-      .fas {
-        color: $color-secondary;
-        position: absolute;
-        transform: scale(0);
-      }
+    &:hover path {
+      fill: url(#text-fill);
+      stroke: transparent;
+    }
 }
-
-
-/* ==== Test code ==== */
-
-  
