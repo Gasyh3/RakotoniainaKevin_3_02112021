@@ -1,3 +1,4 @@
+/* === Animation d'apparition des items de menu === */
 @keyframes itemAppear {
     from {
         //transform: scale(0);
@@ -12,6 +13,7 @@
     }
 }
 
+/* === Animation de rotation du check === */
 @keyframes itemCheckSpin {
     from {
         transform: rotate(-260deg);
@@ -20,6 +22,7 @@
     } 
 }
 
+/* === Animation chargement de la page === */
 @keyframes loading {
     from {
         opacity: 1;
@@ -30,7 +33,7 @@
     }
 }
 
-
+/* === Animation effet sur le loading spinner=== */
 @keyframes loader {
     0% {
         transform: rotate(0deg); border-width: 10px;

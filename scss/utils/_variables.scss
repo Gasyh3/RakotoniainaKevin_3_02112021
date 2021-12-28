@@ -1,20 +1,17 @@
-// Variables principales
+/* === Variables principales === */
 $color-primary: #9356D8;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
-//mixin qui assombri;
+/* === Variables à part === */
 $color-tertiary-2: #1B6150;
-
-//Variables à part
-//Changer ces couleurs en mixin d'une seule couleur
 $color-background-footer: #353535;
 $color-background-localisation: #F3F3F3;
 $color-background-menu: #F6F6F6;
 $color-background-title: #FAFAFA;
 $color-background-button: #686868;
 
-/* === font size=== */
+/* === Taille de polices=== */
 $localisation: 20px;
 $title: 25px;
 $text: 16px;
