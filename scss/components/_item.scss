@@ -65,19 +65,18 @@
         background-color: white;
         @include flex-use (row, center, center);
         border-radius: 100px;
-        transform: rotate(90deg);
-        transition-duration: 0.9s;
+        
     }
 
-    &:hover &__wrapIcon {
-        transform: rotate(360deg);
-        transition-duration: 0.5s;
-    }
-    
     &__icon {
         color: $color-tertiary;
     }
 
+    &:hover {
+        i {
+            animation: itemCheckSpin 0.4s ease-in-out;
+        }
+    } 
 }
 
 // fonction qui permet d'organiser l'arrivée des items

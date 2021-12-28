@@ -12,12 +12,19 @@
     }
 }
 
-@keyframes loading{
-    from{
+@keyframes itemCheckSpin {
+    from {
+        transform: rotate(-260deg);
+    } to {
+        transform: rotate(0);
+    } 
+}
+
+@keyframes loading {
+    from {
         opacity: 1;
         z-index: 10;
-    }
-    to{
+    } to {
         opacity: 0;
         z-index: -1;
     }
