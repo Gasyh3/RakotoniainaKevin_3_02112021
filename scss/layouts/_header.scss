@@ -13,14 +13,25 @@
         width: 32px;
         top: 50%;
         transform: translateY(-50%);
-        font-size: $size-icon-arrow;
+        font-size: $size-icon-mobile;
         color: black;
+
+        @media (min-width: 992px) {
+            // Version desktop
+            font-size: $size-icon-arrow; 
+          }
     }
 
     &__logo {
-        @include police-apparence('Shrikhand', black, $logo-header);
+        @include police-apparence('Shrikhand', black, $logo-header-mobile);
         margin: 0;
         text-align: center;
+
+        @media (min-width: 992px) {
+            // Version desktop
+            @include police-apparence('Shrikhand', black, $logo-header);
+          }
+        
     }
 
     &__logo--alignement {
